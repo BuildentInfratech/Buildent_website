@@ -1,0 +1,34 @@
+/*  */
+ /* CSS for the splash screen */
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the splash screen appears on top of other content */
+    transition: opacity 1s ease; /* Apply transition to opacity property */
+    opacity: 1; /* Start with full opacity */
+
+
+ }
+ 
+ .splash-screen img {
+    max-width: 100%;
+    max-height: 100%;
+ }
+ 
+ .splash-screen.hidden {
+    opacity: 0; /* Set opacity to 0 to make it disappear */
+    pointer-events: none; /* Disable pointer events when hidden */
+ }
+
+
+
+ 
+ 
+ 

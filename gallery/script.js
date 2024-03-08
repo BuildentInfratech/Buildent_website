@@ -1,6 +1,8 @@
 let items = document.querySelectorAll('.slider .list .item ');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
+let next_one = document.getElementById('next-one');
+let prev_one = document.getElementById('prev-one');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
 // config param
@@ -16,6 +18,23 @@ next.onclick = function(){
 }
 //event prev click
 prev.onclick = function(){
+    itemActive = itemActive - 1;
+    if(itemActive < 0){
+        itemActive = countItem - 1;
+    }
+    showSlider();
+}
+
+// event next click
+next_one.onclick = function(){
+    itemActive = itemActive + 1;
+    if(itemActive >= countItem){
+        itemActive = 0;
+    }
+    showSlider();
+}
+//event prev click
+prev_one.onclick = function(){
     itemActive = itemActive - 1;
     if(itemActive < 0){
         itemActive = countItem - 1;

@@ -758,5 +758,21 @@ section {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  .about .row .content h3 {
+    font-size: 2.5rem;
+  }
+  .home .slide {
+    min-height: 60rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
